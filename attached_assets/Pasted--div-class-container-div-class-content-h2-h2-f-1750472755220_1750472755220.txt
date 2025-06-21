@@ -1,0 +1,250 @@
+<div class="container">
+      <div class="content">
+        <h2>평가위원 프로필 작성</h2>
+        
+        <form class="profile-form">
+          <div class="form-section">
+            <h3>1. 인적사항</h3>
+            <table class="form-table">
+              <tr>
+                <td class="label">성명</td>
+                <td class="value">홍길동</td>
+              </tr>
+              <tr>
+                <td class="label">생년월일</td>
+                <td class="value">1996. 01. 12</td>
+              </tr>
+              <tr>
+                <td class="label">성별</td>
+                <td class="input radio-group">
+                  <label><input type="radio" name="gender" value="남성"> 남성</label>
+                  <label><input type="radio" name="gender" value="여성"> 여성</label>
+                </td>
+              </tr>
+              <tr>
+                <td class="label">이메일</td>
+                <td class="input"><input type="email" placeholder="이메일을 입력하세요"></td>
+              </tr>
+              <tr>
+                <td class="label">휴대전화</td>
+                <td class="input"><input type="tel" placeholder="휴대전화번호를 입력하세요"></td>
+              </tr>
+              <tr>
+                <td class="label">자격요건</td>
+                <td class="input checkbox-group">
+                  <label><input type="checkbox" name="qualification" value="1급"> 1급</label>
+                  <label><input type="checkbox" name="qualification" value="2급"> 2급</label>
+                  <label><input type="checkbox" name="qualification" value="3급"> 3급</label>
+                </td>
+              </tr>
+              <tr>
+                <td class="label">소속</td>
+                <td class="input">
+                  <select>
+                    <option value="">선택하세요</option>
+                    <option value="직접입력">직접입력</option>
+                    <option value="기업">기업</option>
+                    <option value="교육기관">교육기관</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="label">구분</td>
+                <td class="input radio-group">
+                  <label><input type="radio" name="category" value="교수"> 교수</label>
+                  <label><input type="radio" name="category" value="현직자"> 현직자</label>
+                </td>
+              </tr>
+              <tr>
+                <td class="label">직위</td>
+                <td class="input"><input type="text" placeholder="직위를 입력하세요"></td>
+              </tr>
+              <tr>
+                <td class="label">담당업무</td>
+                <td class="input"><input type="text" placeholder="담당업무를 입력하세요"></td>
+              </tr>
+              <tr>
+                <td class="label">평가분야</td>
+                <td class="input checkbox-group">
+                  <label><input type="checkbox" name="evaluation_field" value="1순위"> 1순위</label>
+                  <label><input type="checkbox" name="evaluation_field" value="2순위"> 2순위</label>
+                  <label><input type="checkbox" name="evaluation_field" value="3순위"> 3순위</label>
+                </td>
+              </tr>
+            </table>
+          </div>
+          
+          <div class="form-section">
+            <h3>2. 학력사항 (최대 5개)</h3>
+            <table class="form-table">
+              <thead>
+                <tr>
+                  <th>학위구분</th>
+                  <th>학교명</th>
+                  <th>이수전공</th>
+                  <th>졸업구분</th>
+                  <th>졸업년도</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><select>
+                    <option value="">선택</option>
+                    <option value="학사">학사</option>
+                    <option value="석사">석사</option>
+                    <option value="박사">박사</option>
+                  </select></td>
+                  <td><input type="text" placeholder="학교명"></td>
+                  <td><input type="text" placeholder="이수전공"></td>
+                  <td><select>
+                    <option value="">선택</option>
+                    <option value="재학">재학</option>
+                    <option value="수료">수료</option>
+                    <option value="졸업">졸업</option>
+                    <option value="졸업예정">졸업예정</option>
+                  </select></td>
+                  <td><input type="number" placeholder="YYYY" min="1900" max="2024"></td>
+                </tr>
+                <tr>
+                  <td><select>
+                    <option value="">선택</option>
+                    <option value="학사">학사</option>
+                    <option value="석사">석사</option>
+                    <option value="박사">박사</option>
+                  </select></td>
+                  <td><input type="text" placeholder="학교명"></td>
+                  <td><input type="text" placeholder="이수전공"></td>
+                  <td><select>
+                    <option value="">선택</option>
+                    <option value="재학">재학</option>
+                    <option value="수료">수료</option>
+                    <option value="졸업">졸업</option>
+                    <option value="졸업예정">졸업예정</option>
+                  </select></td>
+                  <td><input type="number" placeholder="YYYY" min="1900" max="2024"></td>
+                </tr>
+                <tr>
+                  <td><select>
+                    <option value="">선택</option>
+                    <option value="학사">학사</option>
+                    <option value="석사">석사</option>
+                    <option value="박사">박사</option>
+                  </select></td>
+                  <td><input type="text" placeholder="학교명"></td>
+                  <td><input type="text" placeholder="이수전공"></td>
+                  <td><select>
+                    <option value="">선택</option>
+                    <option value="재학">재학</option>
+                    <option value="수료">수료</option>
+                    <option value="졸업">졸업</option>
+                    <option value="졸업예정">졸업예정</option>
+                  </select></td>
+                  <td><input type="number" placeholder="YYYY" min="1900" max="2024"></td>
+                </tr>
+                <tr>
+                  <td><select>
+                    <option value="">선택</option>
+                    <option value="학사">학사</option>
+                    <option value="석사">석사</option>
+                    <option value="박사">박사</option>
+                  </select></td>
+                  <td><input type="text" placeholder="학교명"></td>
+                  <td><input type="text" placeholder="이수전공"></td>
+                  <td><select>
+                    <option value="">선택</option>
+                    <option value="재학">재학</option>
+                    <option value="수료">수료</option>
+                    <option value="졸업">졸업</option>
+                    <option value="졸업예정">졸업예정</option>
+                  </select></td>
+                  <td><input type="number" placeholder="YYYY" min="1900" max="2024"></td>
+                </tr>
+                <tr>
+                  <td><select>
+                    <option value="">선택</option>
+                    <option value="학사">학사</option>
+                    <option value="석사">석사</option>
+                    <option value="박사">박사</option>
+                  </select></td>
+                  <td><input type="text" placeholder="학교명"></td>
+                  <td><input type="text" placeholder="이수전공"></td>
+                  <td><select>
+                    <option value="">선택</option>
+                    <option value="재학">재학</option>
+                    <option value="수료">수료</option>
+                    <option value="졸업">졸업</option>
+                    <option value="졸업예정">졸업예정</option>
+                  </select></td>
+                  <td><input type="number" placeholder="YYYY" min="1900" max="2024"></td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <div class="file-upload-section">
+              <h4>학력사항 증빙서류 첨부</h4>
+              <input type="file" accept=".pdf,.jpg,.jpeg,.png" multiple>
+              <small>PDF, JPG, PNG 파일만 업로드 가능합니다.</small>
+            </div>
+          </div>
+          
+          <div class="form-section">
+            <h3>3. 자격증 (최대 5개)</h3>
+            <table class="form-table">
+              <thead>
+                <tr>
+                  <th>자격증명</th>
+                  <th>발급기관</th>
+                  <th>자격번호</th>
+                  <th>취득일자</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input type="text" placeholder="자격증명을 입력하세요"></td>
+                  <td><input type="text" placeholder="발급기관을 입력하세요"></td>
+                  <td><input type="text" placeholder="자격번호를 입력하세요"></td>
+                  <td><input type="date"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" placeholder="자격증명을 입력하세요"></td>
+                  <td><input type="text" placeholder="발급기관을 입력하세요"></td>
+                  <td><input type="text" placeholder="자격번호를 입력하세요"></td>
+                  <td><input type="date"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" placeholder="자격증명을 입력하세요"></td>
+                  <td><input type="text" placeholder="발급기관을 입력하세요"></td>
+                  <td><input type="text" placeholder="자격번호를 입력하세요"></td>
+                  <td><input type="date"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" placeholder="자격증명을 입력하세요"></td>
+                  <td><input type="text" placeholder="발급기관을 입력하세요"></td>
+                  <td><input type="text" placeholder="자격번호를 입력하세요"></td>
+                  <td><input type="date"></td>
+                </tr>
+                <tr>
+                  <td><input type="text" placeholder="자격증명을 입력하세요"></td>
+                  <td><input type="text" placeholder="발급기관을 입력하세요"></td>
+                  <td><input type="text" placeholder="자격번호를 입력하세요"></td>
+                  <td><input type="date"></td>
+                </tr>
+              </tbody>
+            </table>
+            
+            <div class="file-upload-section">
+              <h4>자격증 증빙서류 첨부</h4>
+              <input type="file" accept=".pdf,.jpg,.jpeg,.png" multiple>
+              <small>PDF, JPG, PNG 파일만 업로드 가능합니다.</small>
+            </div>
+          </div>
+          
+          
+          
+          <div class="form-actions">
+            <button type="submit" class="submit-btn">등록</button>
+            <button type="button" class="cancel-btn" onclick="showLoginPage()">취소</button>
+          </div>
+        </form>
+      </div>
+    </div>
