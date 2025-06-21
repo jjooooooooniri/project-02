@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>채용 평가위원 매니지먼트 시스템 - 회원가입</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="min-h-screen relative">
+    <div class="korean-bg"></div>
+    
+    <div class="page-header">
+      <div class="header-logo">
+        <img src="logo.png" alt="한국사회능력개발원" class="main-logo" />
+      </div>
+      <div class="top-menu">
+        <a href="#" class="menu-link">공지사항</a>
+        <a href="#" class="menu-link">Q&A</a>
+      </div>
+    </div>
+    
+    <div class="content-wrapper">
+      <h2 class="page-title">평가위원 프로필 작성</h2>
+      
+      <form onsubmit="submitRegister(event)" class="content-card max-w-5xl mx-auto">
+        <div class="form-section">
+          <h3 class="form-section-title">1. 인적사항</h3>
+          <div class="form-table">
+            <table class="w-full">
+              <tbody>
+                <tr>
+                  <td class="label">성명</td>
+                  <td class="p-3 text-gray-600">홍길동</td>
+                </tr>
+                <tr>
+                  <td class="label">생년월일</td>
+                  <td class="p-3 text-gray-600">1996. 01. 12</td>
+                </tr>
+                <tr>
+                  <td class="label">성별</td>
+                  <td class="p-3">
+                    <div class="flex gap-4">
+                      <label class="flex items-center space-x-2">
+                        <input type="radio" name="gender" value="남성" />
+                        <span>남성</span>
+                      </label>
+                      <label class="flex items-center space-x-2">
+                        <input type="radio" name="gender" value="여성" />
+                        <span>여성</span>
+                      </label>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label">이메일</td>
+                  <td class="p-2">
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="이메일을 입력하세요"
+                      class="w-full p-2 border border-gray-300 rounded"
+                      required
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label">휴대전화</td>
+                  <td class="p-2">
+                    <input
+                      type="tel"
+                      name="phone"
+                      placeholder="휴대전화번호를 입력하세요"
+                      class="w-full p-2 border border-gray-300 rounded"
+                      required
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label">자격요건</td>
+                  <td class="p-3">
+                    <div class="flex gap-4 flex-wrap">
+                      <label class="flex items-center space-x-2">
+                        <input type="checkbox" name="qualification" value="1급" />
+                        <span>1급</span>
+                      </label>
+                      <label class="flex items-center space-x-2">
+                        <input type="checkbox" name="qualification" value="2급" />
+                        <span>2급</span>
+                      </label>
+                      <label class="flex items-center space-x-2">
+                        <input type="checkbox" name="qualification" value="3급" />
+                        <span>3급</span>
+                      </label>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label">소속</td>
+                  <td class="p-2">
+                    <select name="affiliation" class="w-full p-2 border border-gray-300 rounded">
+                      <option value="">선택하세요</option>
+                      <option value="직접입력">직접입력</option>
+                      <option value="기업">기업</option>
+                      <option value="교육기관">교육기관</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label">구분</td>
+                  <td class="p-3">
+                    <div class="flex gap-4">
+                      <label class="flex items-center space-x-2">
+                        <input type="radio" name="category" value="교수" />
+                        <span>교수</span>
+                      </label>
+                      <label class="flex items-center space-x-2">
+                        <input type="radio" name="category" value="현직자" />
+                        <span>현직자</span>
+                      </label>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label">직위</td>
+                  <td class="p-2">
+                    <input
+                      type="text"
+                      name="position"
+                      placeholder="직위를 입력하세요"
+                      class="w-full p-2 border border-gray-300 rounded"
+                      required
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label">담당업무</td>
+                  <td class="p-2">
+                    <input
+                      type="text"
+                      name="duties"
+                      placeholder="담당업무를 입력하세요"
+                      class="w-full p-2 border border-gray-300 rounded"
+                      required
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="label">평가분야</td>
+                  <td class="p-3">
+                    <div class="flex gap-4 flex-wrap">
+                      <label class="flex items-center space-x-2">
+                        <input type="checkbox" name="evaluation_field" value="1순위" />
+                        <span>1순위</span>
+                      </label>
+                      <label class="flex items-center space-x-2">
+                        <input type="checkbox" name="evaluation_field" value="2순위" />
+                        <span>2순위</span>
+                      </label>
+                      <label class="flex items-center space-x-2">
+                        <input type="checkbox" name="evaluation_field" value="3순위" />
+                        <span>3순위</span>
+                      </label>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+        <div class="form-section">
+          <h3 class="form-section-title">2. 학력사항 (최대 5개)</h3>
+          <div class="overflow-x-auto">
+            <table class="form-table min-w-full">
+              <thead>
+                <tr>
+                  <th class="text-center">학위구분</th>
+                  <th class="text-center">학교명</th>
+                  <th class="text-center">이수전공</th>
+                  <th class="text-center">졸업구분</th>
+                  <th class="text-center">졸업년도</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-2">
+                    <select name="degree_1" class="w-full p-2 border border-gray-300 rounded">
+                      <option value="">선택</option>
+                      <option value="학사">학사</option>
+                      <option value="석사">석사</option>
+                      <option value="박사">박사</option>
+                    </select>
+                  </td>
+                  <td class="p-2">
+                    <input type="text" name="school_1" placeholder="학교명" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                  <td class="p-2">
+                    <input type="text" name="major_1" placeholder="이수전공" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                  <td class="p-2">
+                    <select name="status_1" class="w-full p-2 border border-gray-300 rounded">
+                      <option value="">선택</option>
+                      <option value="재학">재학</option>
+                      <option value="수료">수료</option>
+                      <option value="졸업">졸업</option>
+                      <option value="졸업예정">졸업예정</option>
+                    </select>
+                  </td>
+                  <td class="p-2">
+                    <input type="number" name="year_1" placeholder="YYYY" min="1900" max="2024" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-2">
+                    <select name="degree_2" class="w-full p-2 border border-gray-300 rounded">
+                      <option value="">선택</option>
+                      <option value="학사">학사</option>
+                      <option value="석사">석사</option>
+                      <option value="박사">박사</option>
+                    </select>
+                  </td>
+                  <td class="p-2">
+                    <input type="text" name="school_2" placeholder="학교명" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                  <td class="p-2">
+                    <input type="text" name="major_2" placeholder="이수전공" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                  <td class="p-2">
+                    <select name="status_2" class="w-full p-2 border border-gray-300 rounded">
+                      <option value="">선택</option>
+                      <option value="재학">재학</option>
+                      <option value="수료">수료</option>
+                      <option value="졸업">졸업</option>
+                      <option value="졸업예정">졸업예정</option>
+                    </select>
+                  </td>
+                  <td class="p-2">
+                    <input type="number" name="year_2" placeholder="YYYY" min="1900" max="2024" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        
+        <div class="text-center mt-8">
+          <button
+            type="submit"
+            class="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-3 rounded-lg text-base font-semibold shadow-lg hover:shadow-xl transition-all border-none cursor-pointer"
+          >
+            등록 완료
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

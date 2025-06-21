@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>채용 평가위원 매니지먼트 시스템 - 대시보드</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="min-h-screen bg-gray-50">
+    <header class="dashboard-header">
+      <div class="dashboard-header-content">
+        <div class="flex items-center gap-6">
+          <div class="header-logo">
+            <img src="logo.png" alt="한국사회능력개발원" class="h-12 w-auto object-contain" />
+          </div>
+          <div class="dashboard-title">채용 평가위원 매니지먼트 시스템</div>
+        </div>
+        <div class="header-right">
+          <nav class="desktop-nav">
+            <a href="#" class="nav-link-dashboard">메뉴1</a>
+            <a href="#" class="nav-link-dashboard">메뉴2</a>
+            <a href="#" class="nav-link-dashboard">메뉴3</a>
+            <button onclick="logout()" class="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md font-semibold transition-colors border-none cursor-pointer">
+              로그아웃
+            </button>
+          </nav>
+          <div class="mobile-nav">
+            <button class="hamburger" onclick="toggleMobileMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay" onclick="closeMobileMenu()"></div>
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="mobile-menu-close" onclick="closeMobileMenu()">×</button>
+      <a href="#" class="nav-link">메뉴1</a>
+      <a href="#" class="nav-link">메뉴2</a>
+      <a href="#" class="nav-link">메뉴3</a>
+      <button onclick="logout()" class="logout-btn mobile-logout">로그아웃</button>
+    </div>
+    
+    <div class="max-w-6xl mx-auto px-5 py-8">
+      <h2 class="text-3xl font-bold text-gray-800 text-center mb-8">
+        평가위원 대시보드
+      </h2>
+      
+      <div class="dashboard-content">
+        <div class="dashboard-card">
+          <h3>내 정보</h3>
+          <div class="space-y-3">
+            <p><strong>이름:</strong> 홍길동</p>
+            <p><strong>소속:</strong> 교육기관</p>
+            <p><strong>직위:</strong> 교수</p>
+            <p><strong>평가분야:</strong> 1순위, 2순위</p>
+          </div>
+        </div>
+        
+        <div class="dashboard-card">
+          <h3>평가 현황</h3>
+          <div class="space-y-3">
+            <p><strong>진행 중인 평가:</strong> 3건</p>
+            <p><strong>완료된 평가:</strong> 12건</p>
+            <p><strong>예정된 평가:</strong> 2건</p>
+          </div>
+        </div>
+        
+        <div class="dashboard-card">
+          <h3>최근 공지사항</h3>
+          <div class="space-y-0">
+            <ul class="space-y-0">
+              <li class="py-2 border-b border-gray-100 text-gray-600">2024년 1분기 평가위원 교육 안내</li>
+              <li class="py-2 border-b border-gray-100 text-gray-600">평가 시스템 업데이트 공지</li>
+              <li class="py-2 text-gray-600">평가위원 회의 일정 안내</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

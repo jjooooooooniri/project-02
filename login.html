@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>채용 평가위원 매니지먼트 시스템 - 로그인</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="min-h-screen relative">
+    <!-- Background -->
+    <div class="korean-bg"></div>
+    
+    <div class="login-container">
+      <div class="page-header">
+        <div class="header-logo">
+          <img src="logo.png" alt="한국사회능력개발원" class="main-logo" />
+        </div>
+        <div class="top-menu">
+          <a href="#" class="menu-link">공지사항</a>
+          <a href="#" class="menu-link">Q&A</a>
+        </div>
+      </div>
+      
+      <div class="login-content">
+        <h1 class="main-title">채용 평가위원 매니지먼트 시스템</h1>
+        
+        <div class="login-form">
+          <div class="space-y-5">
+            <div>
+              <input
+                type="email"
+                placeholder="이메일"
+                id="email"
+                class="w-full p-4 border-2 border-gray-200 rounded-lg text-base"
+              />
+            </div>
+            <div>
+              <input
+                type="password"
+                placeholder="암호"
+                id="password"
+                class="w-full p-4 border-2 border-gray-200 rounded-lg text-base"
+              />
+            </div>
+            
+            <div class="flex gap-4 mt-8">
+              <button
+                onclick="login()"
+                class="flex-1 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white p-4 rounded-lg text-base font-semibold shadow-lg hover:shadow-xl transition-all border-none cursor-pointer"
+              >
+                로그인
+              </button>
+              <button
+                onclick="window.location.href='terms.html'"
+                class="flex-1 bg-transparent text-blue-600 border-2 border-blue-500 hover:bg-blue-500 hover:text-white p-4 rounded-lg text-base font-semibold transition-all cursor-pointer"
+              >
+                신규 등록
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="text-center mt-8 text-white/80 text-sm">
+          <p>한국사회능력개발원 채용 평가위원 시스템</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
