@@ -1,3 +1,5 @@
+@import url('https://webfont.app/api/fonts/paperlogic');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-  font-family: 'Segoe UI', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+  font-family: 'Paperlogic', 'Segoe UI', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
   line-height: 1.6;
   color: #333;
   background-color: #f5f5f5;
