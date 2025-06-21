@@ -241,16 +241,127 @@
                 </tr>
               </tbody>
             </table>
+          </tbody>
+            </table>
+          </div>
+          
+          <div class="form-section">
+            <h4 class="text-lg font-semibold mb-3 text-blue-600">학력사항 증빙서류 첨부</h4>
+            <input type="file" name="education_files" accept=".pdf,.jpg,.jpeg,.png" multiple class="w-full p-2 border border-gray-300 rounded" />
+            <small class="text-gray-500">PDF, JPG, PNG 파일만 업로드 가능합니다.</small>
+          </div>
+        </div>
+        
+        <div class="form-section">
+          <h3 class="form-section-title">3. 자격증 (최대 5개)</h3>
+          <div class="overflow-x-auto">
+            <table class="form-table min-w-full">
+              <thead>
+                <tr>
+                  <th class="text-center">자격증명</th>
+                  <th class="text-center">발급기관</th>
+                  <th class="text-center">자격번호</th>
+                  <th class="text-center">취득일자</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="p-2">
+                    <input type="text" name="cert_name_1" placeholder="자격증명을 입력하세요" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                  <td class="p-2">
+                    <input type="text" name="cert_org_1" placeholder="발급기관을 입력하세요" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                  <td class="p-2">
+                    <input type="text" name="cert_num_1" placeholder="자격번호를 입력하세요" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                  <td class="p-2">
+                    <input type="date" name="cert_date_1" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-2">
+                    <input type="text" name="cert_name_2" placeholder="자격증명을 입력하세요" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                  <td class="p-2">
+                    <input type="text" name="cert_org_2" placeholder="발급기관을 입력하세요" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                  <td class="p-2">
+                    <input type="text" name="cert_num_2" placeholder="자격번호를 입력하세요" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                  <td class="p-2">
+                    <input type="date" name="cert_date_2" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-2">
+                    <input type="text" name="cert_name_3" placeholder="자격증명을 입력하세요" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                  <td class="p-2">
+                    <input type="text" name="cert_org_3" placeholder="발급기관을 입력하세요" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                  <td class="p-2">
+                    <input type="text" name="cert_num_3" placeholder="자격번호를 입력하세요" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                  <td class="p-2">
+                    <input type="date" name="cert_date_3" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-2">
+                    <input type="text" name="cert_name_4" placeholder="자격증명을 입력하세요" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                  <td class="p-2">
+                    <input type="text" name="cert_org_4" placeholder="발급기관을 입력하세요" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                  <td class="p-2">
+                    <input type="text" name="cert_num_4" placeholder="자격번호를 입력하세요" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                  <td class="p-2">
+                    <input type="date" name="cert_date_4" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="p-2">
+                    <input type="text" name="cert_name_5" placeholder="자격증명을 입력하세요" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                  <td class="p-2">
+                    <input type="text" name="cert_org_5" placeholder="발급기관을 입력하세요" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                  <td class="p-2">
+                    <input type="text" name="cert_num_5" placeholder="자격번호를 입력하세요" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                  <td class="p-2">
+                    <input type="date" name="cert_date_5" class="w-full p-2 border border-gray-300 rounded" />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <div class="form-section">
+            <h4 class="text-lg font-semibold mb-3 text-blue-600">자격증 증빙서류 첨부</h4>
+            <input type="file" name="certificate_files" accept=".pdf,.jpg,.jpeg,.png" multiple class="w-full p-2 border border-gray-300 rounded" />
+            <small class="text-gray-500">PDF, JPG, PNG 파일만 업로드 가능합니다.</small>
           </div>
         </div>
         
         <div class="text-center mt-8">
-          <button
-            type="submit"
-            class="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-3 rounded-lg text-base font-semibold shadow-lg hover:shadow-xl transition-all border-none cursor-pointer"
-          >
-            등록 완료
-          </button>
+          <div class="flex gap-4 justify-center">
+            <button
+              type="submit"
+              class="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-3 rounded-lg text-base font-semibold shadow-lg hover:shadow-xl transition-all border-none cursor-pointer"
+            >
+              등록 완료
+            </button>
+            <button
+              type="button"
+              onclick="window.location.href='index.html'"
+              class="bg-transparent text-blue-600 border-2 border-blue-500 hover:bg-blue-500 hover:text-white px-8 py-3 rounded-lg text-base font-semibold transition-all cursor-pointer"
+            >
+              취소
+            </button>
+          </div>
         </div>
       </form>
     </div>
